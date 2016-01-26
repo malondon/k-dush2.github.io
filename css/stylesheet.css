@@ -274,3 +274,14 @@ footer{
   clear: both;
   content: "";
 }
+
+@media screen and ( max-width:479px ){
+  .home_left_content img{
+  background-color: none;
+  width: 200px;
+  display: none;
+  margin: 0 auto;
+  display: block;
+ /* padding-left: 200px;*/
+}
+}
