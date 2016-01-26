@@ -26,16 +26,17 @@
     <ul id="right_menu">
       <li><a href="https://twitter.com/K_dush2"><i class="fa fa-twitter fa-lg"></i></a></li>
       <li><a href="https://www.facebook.com/K-dush2-278417275598224"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+      <li id="toggle"><a href="#"><i class="fa fa-bars fa-lg"></i></a></li>
     </ul>
   </header>
   <div id="home">
     <div class="main_content home_content clearfix">
       <div class="container">
       <div class="row">
-        <div class="home_left_content col-sm-5">
+        <div class="home_left_content col-md-4">
           <img id="home_img" src="img/k-dush2.jpg">
         </div>
-        <div class="home_right_content col-sm-7">
+        <div class="home_right_content col-md-8">
           <!-- <h2>Next game</h2>
           <p>Coming Soon..</p> -->
           <div class="home_t_right_content">
@@ -227,6 +228,19 @@
       }
      }
     );
+    $("#toggle").click(function(){
+      $("#left_menu").slideToggle();
+      return false;
+    });
+    $(window).resize(function(){
+      var win = $(window).width();
+      var p = 990;
+      if(win > p){
+        $("#left_menu").show();
+      } else {
+        $("#left_menu").hide();
+      }
+    });
     });
   </script>
 </body>
