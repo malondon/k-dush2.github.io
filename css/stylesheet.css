@@ -80,10 +80,6 @@ header{
   text-align: center;
 }
 
-#toggle{
-  display: none;
-}
-
 .main_content{
   width: 100%;
   padding-top: 70px;
@@ -230,6 +226,41 @@ header{
     -1px 1px gray,
     1px 1px gray;*/
 }
+
+.bottom_img a{
+  font-size: 25px
+}
+
+.bottom_img a:link{
+  color: white;
+}
+.bottom_img a:visited{
+  color: white;
+}
+.bottom_img a:hover{
+  color: white;
+  letter-spacing: 0px;
+}
+.bottom_img a:active{
+  color: white;
+}
+/*a:link{
+  color: gray;
+}
+a:visited{
+  color: gray;
+}
+a:hover{
+  color: gray;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+}
+a:active{
+  color: gray;
+}*/
+
 .about_top_content{
   padding: 15px;
   margin: 15px;
@@ -390,14 +421,10 @@ footer{
 
 #left_menu{
   display: none;
+  padding-top: 70px;
 }
 #left_menu li{
-    width: 100%;
-}
-
-
-#toggle{
-  display: block;
+  width: 100%;
 }
 }
 

@@ -26,7 +26,7 @@
     <ul id="right_menu">
       <li><a href="https://twitter.com/K_dush2"><i class="fa fa-twitter fa-lg"></i></a></li>
       <li><a href="https://www.facebook.com/K-dush2-278417275598224"><i class="fa fa-facebook-official fa-lg"></i></a></li>
-      <li id="toggle"><a href="#"><i class="fa fa-bars fa-lg"></i></a></li>
+      <!-- <li id="toggle"><i class="fa fa-bars fa-lg"></i></li> -->
     </ul>
   </header>
   <div id="home">
@@ -53,8 +53,8 @@
           </div>
           <div class="home_b_right_content">
             <div class="bottom_img">
-              <h2>UniBirth</h2>
-              <p>慶應義塾の外で開催する体験型謎解きイベントの製作を行う団体です。慶應生以外の参加もOK!</p>
+              <h2>Blog</h2>
+              <p>マイペースにブログを更新中 → <a href="http://kdush2.pazru.com/">K'2ヒミツの製作現場</a></p>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@
               </div>
               <div class="about_right_content col-sm-8">
                 <h3>ただの遊びを全力で</h3>
-                <p>K-dush2は、<br>リアル脱出ゲーム好きな慶應生数人が「慶應でも謎解きイベントがしたい！」と思いたち、設立した慶應で唯一謎解きイベントを企画しているサークルです。<br>現在、不定期公演の他、「Keio 学祭ジャック」と称した慶應各キャンパスでの学園祭への出店をメインの活動として行っています。<br>その他、有志で不定期に参加型脱出・謎解きゲームイベントへの参加をしています。</p>
+                <p>K-dush2は、リアル脱出ゲーム好きな慶應生数人が「慶應でも謎解きイベントがしたい！」と思いたち、設立した慶應で唯一謎解きイベントを企画しているサークルです。<br>現在、不定期公演の他、「Keio 学祭ジャック」と称した慶應各キャンパスでの学園祭への出店をメインの活動として行っています。<br>その他、有志で不定期に参加型脱出・謎解きゲームイベントへの参加をしています。</p>
               </div>
             </div>
           </div>
@@ -172,10 +172,10 @@
       },1000);
       setTimeout(function(){
         $('.home_m_right_content').fadeIn(2000);
-      },1200);
+      },1400);
       setTimeout(function(){
         $('.home_b_right_content').fadeIn(2000);
-      },1400);
+      },1600);
       // $('.about_top_content').fadeIn(2000);
       $('.about_top_content').hide();
       $('.about_top_content').fadeIn(2000);
@@ -228,19 +228,19 @@
       }
      }
     );
-    $("#toggle").click(function(){
-      $("#left_menu").slideToggle();
-      return false;
-    });
-    $(window).resize(function(){
-      var win = $(window).width();
-      var p = 990;
-      if(win > p){
-        $("#left_menu").show();
-      } else {
-        $("#left_menu").hide();
-      }
-    });
+    // $("#toggle").click(function(){
+    //   $("#left_menu").slideToggle();
+    //   return false;
+    // });
+    // $(window).resize(function(){
+    //   var win = $(window).width();
+    //   var p = 990;
+    //   if(win > p){
+    //     $("#left_menu").show();
+    //   } else {
+    //     $("#left_menu").hide();
+    //   }
+    // });
     });
   </script>
 </body>
