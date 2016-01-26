@@ -138,7 +138,7 @@ header{
   background-position: center center;
 }
 .home_t_right_content .top_img{
-  background-color: rgba(77,188,233,0.7);
+  background-color: rgba(77,188,233,0.5);
   /*background-color: rgba(143,48,48,0.7);*/
   border-radius: 2px;
   height: 100%;
@@ -156,7 +156,7 @@ header{
 .home_m_right_content .middle_img{
   /*background-color: rgba(38,173,228,0.7);*/
   /*background-color: rgba(41,99,178,0.7);*/
-  background-color: rgba(0,133,201,0.8);
+  background-color: rgba(0,133,201,0.5);
   border-radius: 2px;
   height: 100%;
 }
@@ -197,7 +197,7 @@ header{
 }
 .home_b_right_content .bottom_img{
   /*background-color: rgba(45,64,134,0.7);*/
-  background-color: rgba(115,193,29,0.7);
+  background-color: rgba(115,193,29,0.5);
   border-radius: 2px;
   height: 100%;
 }
