@@ -259,16 +259,36 @@ header{
   width: 100%;
   height: 400px;
 }
+.member_content h2{
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 200;
+}
 
 
 
 
 .archive_content{
   width: 100%;
-  height: 400px;
   background-color: #f0f8fa;
+  padding-bottom: 30px;
 }
-
+.archive_content h2{
+  text-align: center;
+  padding: 40px;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 200;
+}
+.archive_content img{
+  width: 100%;
+}
+.archive_main_content{
+  text-align: center;
+  padding: 0px 20px 40px;
+}
 
 
 
@@ -283,7 +303,7 @@ header{
   padding: 10px;
   letter-spacing: 2px;
   font-size: 30px;
-   font-weight: 200;
+  font-weight: 200;
 }
 .contact_left_content{
   margin: 0 auto;
@@ -361,5 +381,8 @@ footer{
     display: none;
     margin: 0 auto;
     display: block;
+  }
+  .archive_content img{
+    width: 250px;
   }
 }
