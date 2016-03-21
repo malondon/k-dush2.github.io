@@ -13,19 +13,21 @@
 
 <body>
   <header class="clearfix">
-    <div id="header_img">
-      <a href="#home" style="text-decoration:none;"><img src="img/k-dush2.gif"></a>
+    <div class="container">
+      <div id="header_img">
+        <a href="#home" style="text-decoration:none;"><img src="img/k-dush2.gif"></a>
+      </div>
+      <ul id="left_menu">
+        <li><a href="#about" style="text-decoration:none;">ABOUT</a></li>
+        <li><a href="#member" style="text-decoration:none;">MEMBER</a></li>
+        <li><a href="#archive" style="text-decoration:none;">ARCHIVE</a></li>
+        <li><a href="#contact" style="text-decoration:none;">CONTACT</a></li>
+      </ul>
+      <ul id="right_menu">
+        <li><a href="https://twitter.com/K_dush2"><i class="fa fa-twitter fa-lg"></i></a></li>
+        <li><a href="https://www.facebook.com/K-dush2-278417275598224"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+      </ul>
     </div>
-    <ul id="left_menu">
-      <li><a href="#about" style="text-decoration:none;">ABOUT</a></li>
-      <li><a href="#member" style="text-decoration:none;">MEMBER</a></li>
-      <li><a href="#archive" style="text-decoration:none;">ARCHIVE</a></li>
-      <li><a href="#contact" style="text-decoration:none;">CONTACT</a></li>
-    </ul>
-    <ul id="right_menu">
-      <li><a href="https://twitter.com/K_dush2"><i class="fa fa-twitter fa-lg"></i></a></li>
-      <li><a href="https://www.facebook.com/K-dush2-278417275598224"><i class="fa fa-facebook-official fa-lg"></i></a></li>
-    </ul>
   </header>
   <div id="home">
     <div class="home_content clearfix">
@@ -89,8 +91,20 @@
   </div>
   <div id="member">
     <div class="member_content">
+      <div class="container">
       <h2>MEMBER</h2>
-      <img>
+        <div class="row">
+          <div class="member_main_content col-sm-3">
+            <figure class="snip1194">
+              <img src="img/member_img/chida_hiroki.jpg">
+              <figcaption>
+                <h2>Hiroki Chida</h2>
+                <p>インドネシア語がしゃべれるエンジニア。彼の作るサイトは初心者とは思えない。</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div id="archive">
@@ -216,6 +230,12 @@
             $('.about_bottom_content').fadeIn(2000);
         }
       });
+
+      $(".hover").mouseleave(
+        function () {
+          $(this).removeClass("hover");
+        }
+      );
 
 
       // #で始まるアンカーをクリックした場合に処理
