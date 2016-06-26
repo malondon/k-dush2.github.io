@@ -1,0 +1,29 @@
+.event_content {
+  padding-top: 110px;
+  text-align: center;
+  color: gray;
+  padding-bottom: 70px;
+}
+
+.event_img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 25px;
+  padding: 10px;
+  margin: 5px;
+}
+
+h3 {
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px;
+  padding-top: 20px;
+}
+
+p {
+  padding: 5px;
+  margin: 5px;
+}

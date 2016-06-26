@@ -137,9 +137,17 @@ header{
   text-shadow: 1px 1px 2px gray;
   letter-spacing: 2px;
 }
+.top_img h3 {
+  padding: 5px 20px 5px;
+  font-size: 25px;
+  color: white;
+  font-weight: 200;
+  text-shadow: 1px 1px 2px gray;
+  letter-spacing: 2px;
+}
 .top_img p{
-  padding: 15px 20px;
-  font-size: 30px;
+  padding: 5px 20px;
+  font-size: 23px;
   color: #e6e6e6;
   font-weight: 200;
   text-shadow: 1px 1px 2px gray;
@@ -175,6 +183,10 @@ header{
   color: #e6e6e6;
   font-weight: 200;
   text-shadow: 1px 1px 2px gray;
+}
+.blog_content:hover {
+   text-decoration: none;
+   letter-spacing: 0;
 }
 .home_bottom_right_content{
   background-image: url("../img/background_img2.jpg");
