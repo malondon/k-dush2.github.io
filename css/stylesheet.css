@@ -513,4 +513,26 @@ footer{
     margin: 0 auto;
     display: block;
   }
+  .top_img h3 {
+    padding: 0 20px 5px;
+    font-size: 22px;
+    color: white;
+    font-weight: 200;
+    text-shadow: 1px 1px 2px gray;
+    letter-spacing: 2px;
+  }
+  .top_img p{
+    padding: 0 20px;
+    font-size: 17px;
+    color: #e6e6e6;
+    font-weight: 200;
+    text-shadow: 1px 1px 2px gray;
+  }
+  .middle_img p{
+    padding: 0 20px;
+    font-size: 15px;
+    color: #e6e6e6;
+    font-weight: 200;
+    text-shadow: 1px 1px 2px gray;
+  }
 }
