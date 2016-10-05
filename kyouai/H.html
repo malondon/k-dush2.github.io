@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>シュレーディンガーのパラレルワールド</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- <meta name="viewport" content="user-scalable=no"/> -->
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link rel="stylesheet" type="text/css" href="css/smartphone.css">
+	<link rel="stylesheet" type="text/css" href="css/tablet.css">
+	<!-- <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script> -->
+	<!-- <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
+	<script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/button.c9025956238e7d486d74379e14f50282.js"></script>
+
+
+
+</head>
+<body class="container" >
+	<main>
+		
+		<br>
+		<input type="radio" name="page" id="item1" class="item1" tabindex="-1" checked="">
+		<input type="radio" name="page" id="item2" class="item2" tabindex="-1">
+		<input type="radio" name="page" id="item3" class="item3" tabindex="-1">
+		<input type="radio" name="page" id="item4" class="item4" tabindex="-1">
+		<input type="radio" name="page" id="item5" class="item5" tabindex="-1">
+
+		<section class="item1 maincontent crossword-grid" id="section1">
+			<h1>順に答えをカタカナで入力してください</h1>
+			<div class="content-stack">
+				1. <input type="text" name="cw" class="reg_textbox">
+			</div>
+			<div class="content-stack">
+				2. <input type="text" name="cw" class="reg_textbox">
+			</div>
+			<div class="content-stack">
+				3. <input type="text" name="cw" class="reg_textbox">
+			</div>
+			<div class="content-stack">
+				4. <input type="text" name="cw" class="reg_textbox">
+			</div>
+			<div class="content-stack">
+				5. <input type="text" name="cw" class="reg_textbox">
+			</div>
+			<div class="content-stack">
+				6. <input type="text" name="cw" class="reg_textbox">
+			</div>
+			<div class="content-stack">
+				7. <input type="text" name="cw" class="reg_textbox">
+			</div>
+			<div class="content-stack">
+				8. <input type="text" name="cw" class="reg_textbox">
+			</div>
+			<div class="content-stack">
+				<div class="content-stack">
+					<h3 class="hidden" id="wrongmsg1">不正解です</h3>
+				</div>
+				<div class="content-stack">
+					<button onclick="checkans()" class="checkbutton">答え合わせ</button>
+				</div>
+				<!-- <button onclick="debug(1)">debug fill</button> -->
+				<!-- <button onclick="debug(2)">debug fill2</button> -->
+			</div>
+		</section>
+		<section class="item2 maincontent crossword-grid none" id="section2">
+			<p class="conversation-small text-left">
+				全ての謎を解き、封筒に戻してドアの下から差し入れる。<br>
+				すると程なくして、がちゃり、と鍵が開いた音がした。<br>
+				中からは他の物音はせず、少し躊躇いながらドアを開ける。<br>
+				<br>
+				彼が、私を待っていた。<br>
+				その姿は今にも消えてしまいそうに儚く見えて。<br>
+				思わず立ち尽くす私の腕を、彼がぐいと引っ張る。<br>
+				バランスを崩した私は、彼もろともベッドの上に倒れこんだ。<br>
+				突然のことに動けないでいる私の手を取り、そっと自分の首元へ運ぶと、彼はこう言った。<br>
+				<br>
+				「ねえ、僕のことも殺してよ」<br>
+				<br>
+				待って、私、貴方まで殺したいわけじゃないの、そう必死に訴えても、貴方は哀しげに微笑むだけ。<br>
+				私は、どうすれば。<br>
+			</p>
+			<!-- <blockquote>
+				ャ、ュ、ョ、ッなどの小文字もヤ。ユ、ヨ、ツのように大文字で入力してください
+			</blockquote> -->
+			<div class="content-stack">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" name="cw2" maxlength="1" value="ブ" tabindex="23">
+				<input type="text" name="cw2" maxlength="1" value="ヨ" tabindex="29">
+			</div>
+			<div class="content-stack">
+				<input type="text" disabled class="empty">
+				<input type="text" name="cw2" maxlength="1" value="ホ" tabindex="4">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" name="cw2" maxlength="1" value="ロ" tabindex="24">
+				<input type="text" name="cw2" maxlength="1" value="ウ" tabindex="30">
+			</div>
+			<div class="content-stack">
+				<input type="text" disabled class="empty">
+				<input type="text" name="cw2" maxlength="1" value="ウ" tabindex="5">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" name="cw2" maxlength="1" value="ツ" tabindex="25">
+				<input type="text" name="cw2" maxlength="1" value="ス" tabindex="31">
+			</div>
+			<div class="content-stack">
+				<input type="text" disabled class="empty">
+				<input type="text" name="cw2" maxlength="1" value="チ" tabindex="6">
+				<input type="text" disabled class="empty">
+				<input type="text" name="cw2" maxlength="1" value="タ" tabindex="13">
+				<input type="text" name="cw2" maxlength="1" value="カ" tabindex="16">
+				<input type="text" disabled class="empty">
+				<input type="text" name="cw2" maxlength="1" value="ク" tabindex="26">
+				<input type="text" name="cw2" maxlength="1" value="イ" tabindex="32">
+			</div>
+			<div class="content-stack">
+				<input type="text" name="cw2" maxlength="1" value="キ" tabindex="1">
+				<input type="text" name="cw2" maxlength="1" value="ヨ" tabindex="7">
+				<input type="text" name="cw2" maxlength="1" value="ウ" tabindex="9">
+				<input type="text" name="cw2" maxlength="1" value="キ" tabindex="14">
+				<input type="text" name="cw2" maxlength="1" value="ナ" tabindex="17">
+				<input type="text" name="cw2" maxlength="1" value="ラ" tabindex="20">
+				<input type="text" name="cw2" maxlength="1" value="ベ" tabindex="27">
+				<input type="text" name="cw2" maxlength="1" value="ロ" tabindex="33">
+			</div>
+			<div class="content-stack">
+				<input type="text" name="cw2" maxlength="1" value="イ" tabindex="2">
+				<input type="text" name="cw2" maxlength="1" value="ウ" tabindex="8">
+				<input type="text" name="cw2" maxlength="1" value="オ" tabindex="10">
+				<input type="text" name="cw2" maxlength="1" value="ビ" tabindex="15">
+				<input type="text" name="cw2" maxlength="1" value="ヅ" tabindex="18">
+				<input type="text" name="cw2" maxlength="1" value="ン" tabindex="21">
+				<input type="text" name="cw2" maxlength="1" value="イ" tabindex="28">
+				<input type="text" disabled class="empty">
+			</div>
+			<div class="content-stack">
+				<input type="text" name="cw2" maxlength="1" value="ト" tabindex="3">
+				<input type="text" disabled class="empty">
+				<input type="text" name="cw2" maxlength="1" value="ツ" tabindex="11">
+				<input type="text" disabled class="empty">
+				<input type="text" name="cw2" maxlength="1" value="チ" tabindex="19">
+				<input type="text" name="cw2" maxlength="1" value="プ" tabindex="22">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+			</div>
+			<div class="content-stack">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" name="cw2" maxlength="1" value="カ" tabindex="12">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+				<input type="text" disabled class="empty">
+			</div>
+			<div class="content-stack">
+				<div class="content-stack">
+					<h3 class="hidden" id="wrongmsg2">答えが異なります</h3>
+					<input type="text" class="none reg_textbox" id="s2textbox" oninput="check_2h_a(1)">
+				</div>
+				<div class="content-stack">
+					<br>
+					<button class="none checkbutton" onclick="checkans()" id="checkbutton2">答え合わせ</button>
+				</div>
+				<!-- <button onclick="debug(1)">debug fill</button> -->
+				<!-- <button onclick="debug(2)">debug fill2</button> -->
+			</div>
+		</section>
+		<section class="item3 maincontent none" id="section3">
+			<div class="content-stack">
+				<p class="conversation-small text-left">
+					「愛してる」<br>
+					「……」<br>
+					「私、貴方のことを愛しているわ」<br>
+					口からこぼれたのは、彼への想いだった。<br>
+					ずっと彼だけを見てきた。<br>
+					この気持ちが、私の全て。<br>
+					その時、彼から表情が消えた。<br>
+					「そう」<br>
+					小さく呟くと、彼は私の目をじっと見つめ、そして微笑んだ。<br>
+					<br>
+					「なんだ、君も同じ気持ちだったのか」<br>
+					<br>
+					今まで見たことのない、透き通るようなその笑顔。<br>
+					その笑顔のためなら、何だって出来ると思えた。<br>
+					彼だけのために、私は生きよう。<br>
+					「僕も君のこと、大好きだよ」<br>
+					<br>
+					<br>
+					私は永遠に、貴方のもの。<br>
+				</p>
+			</div>
+			<div class="content-stack">
+				<br>
+				<button onclick="checkans()" class="checkbutton">Next</button>
+			</div>
+		</section>
+		<section class="item4 maincontent none" id="section4">
+			<div class="content-stack">
+				<p class="conversation-small text-left">
+					とうとう貴方と結ばれた。<br>
+					邪魔する者も、もういない。<br>
+					この手は随分汚れてしまったけれど、貴方のためなら構わない。<br>
+					ああ、本当に、本当に嬉しい。<br>
+					貴方が隣にいる。<br>
+					ようやく手に入れた、私の唯一の幸せ。<br>
+					貴方さえいれば、もう何もいらない。<br>
+					これからもずっと一緒にいようね。<br>
+				</p>
+			</div>
+			<div class="content-stack">
+				<br>
+				<button onclick="checkans()" class="checkbutton">Next</button>
+			</div>
+		</section>
+		<section class="item5 maincontent none" id="section5">
+			<div class="content-stack">
+				<p class="conversation-small text-left">
+					以上で「シュレーディンガーのパラレルワールド」は終了となります。<br>
+					ここまで御覧になっていただきありがとうございました。<br>
+					もう一方のルートも是非観測してみてください。<br>
+					両方のルートを御覧になったという方は、もしよろしければアンケートにご協力をお願いします。<br>
+				</p>
+			</div>
+			<div class="content-stack">
+				<!-- <div class="enquete-large">
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVTm9QW9ngrZlEndEa4D8nVjugJBQ9kpGrJaT-dGrUgiziJQ/viewform?embedded=true" width="100%" height="600px">Loading…</iframe>
+				</div> -->
+				<div class="enquete-small">
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSfVTm9QW9ngrZlEndEa4D8nVjugJBQ9kpGrJaT-dGrUgiziJQ/viewform">アンケートへ(ページが飛びます)</a>
+				</div>
+				<blockquote>「シュレーディンガーのパラレルワールド」でハッピーエンドを観測しました。 #狂愛謎<cite>をツイートする</cite>
+				</blockquote>
+				<br>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="「シュレーディンガーのパラレルワールド」でハッピーエンドを観測しました。 #狂愛謎" data-lang="ja" data-show-count="false">Tweet</a><script async src="js/widgets.js" charset="utf-8"></script>
+			</div>
+			<div class="content-stack">
+				<br>
+				<a href="./B.html" class="linkbutton">選ばれなかった世界へ</a>
+				<!-- <button onclick="checkans()" class="checkbutton">Next</button> -->
+			</div>
+		</section>
+	</main>
+	<br>
+	<footer>© <a href="http://k-dush2.github.io/index.html">K-dush2</a>, Developed by <a href="http://comproduction.sakura.ne.jp/">CoMP</a></footer>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

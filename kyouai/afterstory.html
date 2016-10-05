@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>シュレーディンガーのパラレルワールド</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- <meta name="viewport" content="user-scalable=no"/> -->
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link rel="stylesheet" type="text/css" href="css/smartphone.css">
+	<link rel="stylesheet" type="text/css" href="css/tablet.css">
+	<!-- <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script> -->
+	<!-- <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
+	<script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/button.c9025956238e7d486d74379e14f50282.js"></script>
+
+
+
+</head>
+<body class="container" >
+	<main>
+		<input type="hidden" id="startfrom" value="5">
+		<br>
+		<input type="radio" name="page" id="item6" class="item6" tabindex="0" checked="">
+		<input type="radio" name="page" id="item7" class="item7" tabindex="0">
+		<input type="radio" name="page" id="item8" class="item8" tabindex="0">
+
+		<section class="item6 maincontent" id="section6">
+			<div class="content-stack">
+				<p class="conversation">
+					貴方の気持ちを教えて
+				</p>
+				<input type="text" class="reg_textbox" name="s6textbox">
+				<p class="conversation">
+					君の気持ちを教えて
+				</p>
+				<input type="text" class="reg_textbox" name="s6textbox">
+				<div class="content-stack">
+					<div class="content-stack">
+						<h3 class="hidden" id="wrongmsg6">答えが異なります</h3>
+					</div>
+					<div class="content-stack">
+						<br>
+						<button onclick="checkans()" class="checkbutton">答え合わせ</button>
+					</div>
+					<!-- <button onclick="debug(1)">debug fill</button>
+					<button onclick="debug(2)">debug fill2</button> -->
+				</div>
+			</div>
+		</section>
+		<section class="item7 maincontent none" id="section7">
+			<div class="content-stack">
+				<p class="conversation-small text-left">
+					ええ、初めにお伝えした通りです。<br>
+					選べる「結末」は一つだけ。<br>
+					どちらの世界でも、彼女は彼にとっての至高であり、彼は彼女にとっての唯一。<br>
+					彼と彼女は同じように出会い、同じように時を重ね、同じように惹かれ合う。<br>
+					結末は一つでしかありえない。<br>
+					彼は彼女以外の全てを失い、彼女は彼という全てを手に入れる。<br>
+					ハッピーエンドで、バッドエンド。<br>
+					それが二人の愛の形。<br>
+					これが彼と彼女の生き着く果て。<br>
+					観測者たるあなたがどちらの世界を選ぼうと、何も変わらない。<br>
+					狂っているのは結末ではなく、二人の愛そのものだ。<br>
+					<br>
+					<br>
+					<br>
+					もし、他の結末を御覧になりたいというのであれば。<br>
+					どうぞお進みください。<br>
+					ハッピーエンドにしてバッドエンド。<br>
+					結局何も、変わりませんが。<br>
+				</p>
+			</div>
+			<br>
+			<button onclick="checkans()" class="checkbutton">Next</button>
+		</section>
+		<section class="item8 maincontent none" id="section8">
+			<div class="content-stack">
+				<p class="conversation">
+					重ね合わせの世界
+				</p>
+				<p class="conversation-small text-left">
+					<br>
+					<br>
+					<br>
+					「愛してる」<br>
+					「大好き」<br>
+					向かい合った二人は、自分の気持ちをそっと言葉に乗せ、けれど相手の小さな声を聞こうとはしなかった。<br>
+					彼は思った。<br>
+					ー大切な人は皆いなくなってしまう。ならばいっそ、一番大切な彼女を連れて、大切な彼らの元へ。<br>
+					彼女は思った。<br>
+					ーどれだけこの手を汚しても、きっと彼は私だけのものになってはくれない。ならばいっそ、彼を連れて誰もいない世界へ。<br>
+					二人の気持ちは、悲しいほどにすれ違っていた。<br>
+					彼は彼女をそっと抱きしめた。<br>
+					彼女もそれに応え、強く彼を抱きしめ返す。<br>
+					そして、二人の背を、互いの刃物が貫いた。<br>
+					彼は笑っていた。<br>
+					彼女も笑っていた。<br>
+					愛した人の腕の中で、静かに最後を迎えるその瞬間。<br>
+					二人にとってそれは幸せそのものだった。<br>
+					二人の愛は、永遠のものとなったのだ。<br>
+					<br>
+					<br>
+					これは、重ね合わせの世界の話。<br>
+					<br>
+				</p>
+			</div>
+			<div class="content-stack">
+				<blockquote>「シュレーディンガーのパラレルワールド」で重ね合わせの世界を観測しました。
+					#狂愛謎<cite>をツイートする</cite>
+				</blockquote>
+				<br><a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="「シュレーディンガーのパラレルワールド」で重ね合わせの世界を観測しました。
+				#狂愛謎" data-lang="ja" data-show-count="false">Tweet</a><script async src="js/widgets.js" charset="utf-8"></script>
+			</div>
+		</section>
+	</main>
+	<br>
+	<footer>© <a href="http://k-dush2.github.io/index.html">K-dush2</a>, Developed by <a href="http://comproduction.sakura.ne.jp/">CoMP</a></footer>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
