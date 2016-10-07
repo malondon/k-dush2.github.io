@@ -1,9 +1,10 @@
 /* TABLET */
+/*and (-webkit-min-device-pixel-ratio: 1)*/
 
 @media only screen
 and (min-device-width: 768px)
 and (max-device-width: 1000px)
-and (-webkit-min-device-pixel-ratio: 1) {
+ {
 	input[type="text"]:not(.reg_textbox) {
 		position: relative;
 		/*border: 1px dashed #696;*/
@@ -46,10 +47,11 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	}
 }
 
+/*and (-webkit-min-device-pixel-ratio: 1) */
 @media only screen
 and (min-device-width: 1000px)
 and (max-device-width: 1024px)
-and (-webkit-min-device-pixel-ratio: 2) {
+{
 	
 	input[type="text"]:not(.reg_textbox) {
 		position: relative;
