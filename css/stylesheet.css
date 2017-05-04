@@ -240,7 +240,7 @@ header{
 }
 
 
-
+/*   about   */
 
 .about_content{
   width: 100%;
@@ -292,8 +292,7 @@ header{
   padding: 5px 30px;
 }
 
-
-
+/*   member   */
 
 .member_content{
   width: 100%;
@@ -399,7 +398,7 @@ figure.snip1194.hover figcaption p {
   opacity: 0.6;
 }
 
-
+/*   achieve   */
 
 .archive_content{
   width: 100%;
@@ -421,7 +420,7 @@ figure.snip1194.hover figcaption p {
   padding: 0px 20px 40px;
 }
 
-
+/*   contact   */
 
 .contact_content{
   background-color: #26ADE4;
